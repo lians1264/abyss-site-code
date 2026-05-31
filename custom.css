@@ -79,7 +79,7 @@
 /* Contact Page */
 .contact-list{width:100vw !important;margin-left:calc(-50vw + 50%) !important;padding:0 !important}
 .contact-item{padding:2.5rem 4rem !important;border-bottom:1px solid rgba(0,0,0,0.06);transition:color 0.4s ease;position:relative;overflow:visible !important}
-.contact-item::before{content:'';position:absolute;top:0;bottom:0;left:0;right:0;background:#7B5EA7;transform:scaleX(0);transform-origin:left;transition:transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94);z-index:0}
+.contact-item::before{content:'';position:absolute;top:0;bottom:0;left:0;right:0;background:#1A1A1A;transform:scaleX(0);transform-origin:left;transition:transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94);z-index:0}
 .contact-item:hover::before{transform:scaleX(1)}
 .contact-item:hover{color:#fff !important}
 .contact-item>*{position:relative;z-index:1}
