@@ -77,37 +77,25 @@
 .lb-next{right:1.5rem}
 .lb-prev:hover,.lb-next:hover{opacity:1}
 /* Contact Page */
-.contact-list{padding:0 4rem}
-.contact-item{display:grid;grid-template-columns:100px 1fr auto;gap:2.5rem;align-items:center;padding:2.5rem 0;border-bottom:1px solid rgba(0,0,0,0.06);position:relative;overflow:hidden;transition:all 0.5s cubic-bezier(0.4,0,0.2,1);text-decoration:none;color:#1A1A1A}
 .contact-list{width:100vw !important;margin-left:calc(-50vw + 50%) !important;padding:0 !important}
-.contact-item{padding-left:4rem !important;padding-right:4rem !important}
-.contact-item{transition:background-color 0.4s ease,color 0.4s ease}
+.contact-item{padding:2.5rem 4rem !important;border-bottom:1px solid rgba(0,0,0,0.06);transition:background-color 0.4s ease,color 0.4s ease}
 .contact-item:hover{background-color:#1A1A1A !important;color:#fff !important}
-.contact-item:hover .contact-dept{color:rgba(255,255,255,0.4) !important}
-.contact-item:hover .contact-name{color:rgba(255,255,255,0.7) !important}
-.contact-item:hover .contact-role{color:rgba(255,255,255,0.4) !important}
+.contact-img{width:80px;height:100px;overflow:hidden;flex-shrink:0;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1)}
 .contact-item:hover .contact-img{transform:scale(1.05)}
-.contact-item:hover .contact-img img{filter:grayscale(0%) !important}
-.contact-item:hover .contact-arrow{opacity:1 !important;transform:translateX(0) !important}
-.contact-item:hover .contact-email{transform:translateX(10px)}
-.contact-item:hover .contact-email .char{transform:translateY(-3px)}
-.contact-img{width:80px;height:100px;overflow:hidden;position:relative;z-index:1;transform:scale(1);transition:transform 0.5s cubic-bezier(0.4,0,0.2,1);flex-shrink:0}
-.contact-item:hover .contact-img{transform:scale(1.05)}
-.contact-img img{width:80px !important;height:100px !important;object-fit:cover;filter:grayscale(100%);transition:filter 0.5s;max-width:none}
+.contact-img img{width:100% !important;height:100% !important;object-fit:cover;filter:grayscale(100%);transition:filter 0.5s;max-width:none}
 .contact-item:hover .contact-img img{filter:grayscale(0%)}
-.contact-main{position:relative;z-index:1}
-.contact-dept{font-size:0.45rem !important;letter-spacing:0.2em;text-transform:uppercase;color:#999;margin-bottom:0.5rem;transition:color 0.5s}
+.contact-dept{font-size:0.45rem !important;letter-spacing:0.2em;text-transform:uppercase;color:#999;margin-bottom:0.5rem;transition:color 0.4s}
 .contact-item:hover .contact-dept{color:rgba(255,255,255,0.4)}
 .contact-email{font-size:clamp(1.5rem,3.5vw,2.5rem) !important;font-weight:600 !important;letter-spacing:-0.01em;display:inline-block;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1)}
 .contact-email .char{display:inline-block;transition:transform 0.4s cubic-bezier(0.4,0,0.2,1)}
 .contact-item:hover .contact-email{transform:translateX(10px)}
 .contact-item:hover .contact-email .char{transform:translateY(-3px)}
 .contact-meta{display:flex;gap:1.5rem;margin-top:0.5rem;white-space:nowrap}
-.contact-name{font-size:0.6rem;color:#666;transition:color 0.5s}
-.contact-role{font-size:0.55rem;color:#999;transition:color 0.5s}
+.contact-name{font-size:0.6rem;color:#666;transition:color 0.4s}
+.contact-role{font-size:0.55rem;color:#999;transition:color 0.4s}
 .contact-item:hover .contact-name{color:rgba(255,255,255,0.7)}
 .contact-item:hover .contact-role{color:rgba(255,255,255,0.4)}
-.contact-arrow{position:relative;z-index:1;font-size:1.8rem;font-weight:200;opacity:0;transform:translateX(-10px);transition:all 0.4s cubic-bezier(0.4,0,0.2,1);align-self:center;padding-right:1rem}
+.contact-arrow{font-size:1.8rem;font-weight:200;opacity:0;transform:translateX(-10px);transition:opacity 0.4s,transform 0.4s;align-self:center;padding-right:1rem}
 .contact-item:hover .contact-arrow{opacity:1;transform:translateX(0)}
 .contact-info-row{display:flex;gap:4rem;padding:3rem 4rem;border-top:1px solid rgba(0,0,0,0.06)}
 .contact-info-label{font-size:0.45rem;letter-spacing:0.2em;text-transform:uppercase;color:#999;margin-bottom:0.4rem}
