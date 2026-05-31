@@ -78,7 +78,7 @@
 .lb-prev:hover,.lb-next:hover{opacity:1}
 /* Contact Page */
 .contact-list{width:100vw !important;margin-left:calc(-50vw + 50%) !important;padding:0 !important}
-.contact-item{padding:2.5rem 4rem !important;border-bottom:1px solid rgba(0,0,0,0.06);transition:color 0.4s ease;position:relative;overflow:visible !important}
+.contact-item{padding:2.5rem 4rem !important;border-bottom:1px solid rgba(0,0,0,0.06) !important;transition:color 0.4s ease !important;position:relative !important;overflow:visible !important}
 .contact-item::before{content:'';position:absolute;top:0;bottom:0;left:0;right:0;background:#1A1A1A;transform:scaleX(0);transform-origin:left;transition:transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94);z-index:0}
 .contact-item:hover::before{transform:scaleX(1)}
 .contact-item:hover{color:#fff !important}
@@ -89,10 +89,10 @@
 .contact-item:hover .contact-img img{filter:grayscale(0%)}
 .contact-dept{font-size:0.45rem !important;letter-spacing:0.2em;text-transform:uppercase;color:#999;margin-bottom:0.5rem;transition:color 0.4s}
 .contact-item:hover .contact-dept{color:rgba(255,255,255,0.4)}
-.contact-email{font-size:clamp(1.5rem,3.5vw,2.5rem) !important;font-weight:600 !important;letter-spacing:-0.01em;display:inline-block;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1)}
-.contact-email .char{display:inline-block;transition:transform 0.4s cubic-bezier(0.4,0,0.2,1)}
-.contact-item:hover .contact-email{transform:translateX(10px)}
-.contact-item:hover .contact-email .char{transform:translateY(-3px)}
+.contact-email,.contact-email-1{font-size:clamp(1.5rem,3.5vw,2.5rem) !important;font-weight:600 !important;letter-spacing:-0.01em;display:inline-block;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1)}
+.contact-email .char,.contact-email-1 .char{display:inline-block;transition:transform 0.4s cubic-bezier(0.4,0,0.2,1)}
+.contact-item:hover .contact-email,.contact-item:hover .contact-email-1{transform:translateX(10px)}
+.contact-item:hover .contact-email .char,.contact-item:hover .contact-email-1 .char{transform:translateY(-3px)}
 .contact-meta{display:flex;gap:1.5rem;margin-top:0.5rem;white-space:nowrap}
 .contact-name{font-size:0.6rem;color:#666;transition:color 0.4s}
 .contact-role{font-size:0.55rem;color:#999;transition:color 0.4s}

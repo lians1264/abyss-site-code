@@ -50,7 +50,7 @@ next.addEventListener('click',function(e){e.stopPropagation();cur=(cur+1)%srcs.l
 document.addEventListener('keydown',function(e){if(!overlay.classList.contains('active'))return;if(e.key==='Escape')overlay.classList.remove('active');if(e.key==='ArrowLeft'){cur=(cur-1+srcs.length)%srcs.length;img.src=srcs[cur]}if(e.key==='ArrowRight'){cur=(cur+1)%srcs.length;img.src=srcs[cur]}});
 })();
 // Contact email character wave animation
-document.querySelectorAll('.contact-email').forEach(function(el){
+document.querySelectorAll('.contact-email,.contact-email-1').forEach(function(el){
 var text=el.textContent;
 el.innerHTML=text.split('').map(function(c,i){
 return '<span class="char" style="transition-delay:'+i*20+'ms">'+(c===' '?'&nbsp;':c)+'</span>';
