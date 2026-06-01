@@ -1,6 +1,7 @@
 if(window.location.pathname.indexOf('/apply')!==-1)document.body.classList.add('body-apply');
 document.querySelectorAll('.nav-btn').forEach(function(btn){if(btn.textContent.trim().replace(/[^a-zA-Z]/g,'').trim()==='Apply')btn.href='/apply'});
 document.querySelectorAll('.hero-nav-link').forEach(function(link){if(link.textContent.trim()==='Contact')link.href='/contact'});
+document.querySelectorAll('*').forEach(function(el){if(el.children.length===0&&el.textContent.indexOf('Belgrade')!==-1)el.textContent=el.textContent.replace(/Belgrade,?\s*Serbia/g,'Zagreb, Croatia').replace(/Belgrade/g,'Zagreb')});
 // Group form fields with section dividers
 ;(function(){
 var form=document.querySelector('.apply-form form');if(!form)return;
