@@ -21,7 +21,7 @@
 .hero-nav.solid .nav-btn{color:#1A1A1A !important;border-color:#1A1A1A !important}
 .hero-nav.solid .nav-btn:hover{background:#1A1A1A !important;color:#fff !important;transition:all 0.3s !important}
 .hero-bg img{opacity:1}
-.hero-bg::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.45);z-index:1}
+.hero-bg::after{display:none}
 .hero-content{position:absolute;bottom:9rem;left:2.5rem;z-index:5}
 .hero-title{font-weight:300;font-size:clamp(4rem,8vw,7rem);line-height:1.05;color:#fff;letter-spacing:0.04em;text-transform:uppercase}
 .hero-title .word{display:inline-block}
